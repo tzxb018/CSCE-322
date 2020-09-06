@@ -1,0 +1,5 @@
+<< alpha    Moves  :=     [      l %   d %   r %   u %   l %   u %   l %   u %   l %   d %   R %   u %   u %   r %   l %   l %   l %   D]  omega>     
+<< alpha     puzzle :=   {  
+  1 %   2 %   0     
+]
+omega>     
