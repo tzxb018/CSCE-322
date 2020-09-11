@@ -172,7 +172,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 				{
 				setState(46);
 				((BossContext)_localctx).ANYTHING = match(ANYTHING);
-				System.out.println("Line " + (((BossContext)_localctx).ANYTHING!=null?((BossContext)_localctx).ANYTHING.getLine():0) + " Contains Unrecognized Token " + (((BossContext)_localctx).ANYTHING!=null?((BossContext)_localctx).ANYTHING.getText():null)); System.exit(1);
+				System.out.println("Line " + (((BossContext)_localctx).ANYTHING!=null?((BossContext)_localctx).ANYTHING.getLine():0) + " Contains Unrecognized Token " + (((BossContext)_localctx).ANYTHING!=null?((BossContext)_localctx).ANYTHING.getText():null) + "."); System.exit(1);
 				}
 				break;
 			}
@@ -189,12 +189,14 @@ public class csce322hmwrk01prt01Parser extends Parser {
 	}
 
 	public static class Move_listContext extends ParserRuleContext {
+		public Token ANYTHING;
 		public MoveContext move() {
 			return getRuleContext(MoveContext.class,0);
 		}
 		public Move_listContext move_list() {
 			return getRuleContext(Move_listContext.class,0);
 		}
+		public TerminalNode ANYTHING() { return getToken(csce322hmwrk01prt01Parser.ANYTHING, 0); }
 		public Move_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -213,7 +215,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		Move_listContext _localctx = new Move_listContext(_ctx, getState());
 		enterRule(_localctx, 2, RULE_move_list);
 		try {
-			setState(56);
+			setState(58);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,1,_ctx) ) {
 			case 1:
@@ -241,6 +243,14 @@ public class csce322hmwrk01prt01Parser extends Parser {
 				move();
 				}
 				break;
+			case 4:
+				enterOuterAlt(_localctx, 4);
+				{
+				setState(56);
+				((Move_listContext)_localctx).ANYTHING = match(ANYTHING);
+				System.out.println("Line " + (((Move_listContext)_localctx).ANYTHING!=null?((Move_listContext)_localctx).ANYTHING.getLine():0) + " Contains Unrecognized Token " + (((Move_listContext)_localctx).ANYTHING!=null?((Move_listContext)_localctx).ANYTHING.getText():null) + "."); System.exit(1);
+				}
+				break;
 			}
 		}
 		catch (RecognitionException re) {
@@ -255,12 +265,14 @@ public class csce322hmwrk01prt01Parser extends Parser {
 	}
 
 	public static class Row_itemsContext extends ParserRuleContext {
+		public Token ANYTHING;
 		public NumContext num() {
 			return getRuleContext(NumContext.class,0);
 		}
 		public Row_itemsContext row_items() {
 			return getRuleContext(Row_itemsContext.class,0);
 		}
+		public TerminalNode ANYTHING() { return getToken(csce322hmwrk01prt01Parser.ANYTHING, 0); }
 		public Row_itemsContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -279,18 +291,18 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		Row_itemsContext _localctx = new Row_itemsContext(_ctx, getState());
 		enterRule(_localctx, 4, RULE_row_items);
 		try {
-			setState(63);
+			setState(67);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,2,_ctx) ) {
 			case 1:
 				enterOuterAlt(_localctx, 1);
 				{
 				{
-				setState(58);
-				num();
-				setState(59);
-				match(T__0);
 				setState(60);
+				num();
+				setState(61);
+				match(T__0);
+				setState(62);
 				row_items();
 				}
 				}
@@ -298,8 +310,16 @@ public class csce322hmwrk01prt01Parser extends Parser {
 			case 2:
 				enterOuterAlt(_localctx, 2);
 				{
-				setState(62);
+				setState(64);
 				num();
+				}
+				break;
+			case 3:
+				enterOuterAlt(_localctx, 3);
+				{
+				setState(65);
+				((Row_itemsContext)_localctx).ANYTHING = match(ANYTHING);
+				System.out.println("Line " + (((Row_itemsContext)_localctx).ANYTHING!=null?((Row_itemsContext)_localctx).ANYTHING.getLine():0) + " Contains Unrecognized Token " + (((Row_itemsContext)_localctx).ANYTHING!=null?((Row_itemsContext)_localctx).ANYTHING.getText():null) + "."); System.exit(1);
 				}
 				break;
 			}
@@ -316,6 +336,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 	}
 
 	public static class Row_listContext extends ParserRuleContext {
+		public Token ANYTHING;
 		public Row_itemsContext row_items() {
 			return getRuleContext(Row_itemsContext.class,0);
 		}
@@ -325,6 +346,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		public Row_listContext row_list() {
 			return getRuleContext(Row_listContext.class,0);
 		}
+		public TerminalNode ANYTHING() { return getToken(csce322hmwrk01prt01Parser.ANYTHING, 0); }
 		public Row_listContext(ParserRuleContext parent, int invokingState) {
 			super(parent, invokingState);
 		}
@@ -343,7 +365,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		Row_listContext _localctx = new Row_listContext(_ctx, getState());
 		enterRule(_localctx, 6, RULE_row_list);
 		try {
-			setState(71);
+			setState(77);
 			_errHandler.sync(this);
 			switch ( getInterpreter().adaptivePredict(_input,3,_ctx) ) {
 			case 1:
@@ -355,11 +377,11 @@ public class csce322hmwrk01prt01Parser extends Parser {
 				enterOuterAlt(_localctx, 2);
 				{
 				{
-				setState(66);
+				setState(70);
 				row_items();
-				setState(67);
+				setState(71);
 				end_row();
-				setState(68);
+				setState(72);
 				row_list();
 				}
 				}
@@ -367,8 +389,16 @@ public class csce322hmwrk01prt01Parser extends Parser {
 			case 3:
 				enterOuterAlt(_localctx, 3);
 				{
-				setState(70);
+				setState(74);
 				row_items();
+				}
+				break;
+			case 4:
+				enterOuterAlt(_localctx, 4);
+				{
+				setState(75);
+				((Row_listContext)_localctx).ANYTHING = match(ANYTHING);
+				System.out.println("Line " + (((Row_listContext)_localctx).ANYTHING!=null?((Row_listContext)_localctx).ANYTHING.getLine():0) + " Contains Unrecognized Token " + (((Row_listContext)_localctx).ANYTHING!=null?((Row_listContext)_localctx).ANYTHING.getText():null) + "."); System.exit(1);
 				}
 				break;
 			}
@@ -407,7 +437,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(73);
+			setState(79);
 			((StartContext)_localctx).START = match(START);
 			System.out.println("Start Section: " + (((StartContext)_localctx).START!=null?((StartContext)_localctx).START.getText():null));
 			}
@@ -446,7 +476,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(76);
+			setState(82);
 			((EndContext)_localctx).END = match(END);
 			System.out.println("End Section: " + (((EndContext)_localctx).END!=null?((EndContext)_localctx).END.getText():null));
 			}
@@ -484,7 +514,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(79);
+			setState(85);
 			match(VALUE);
 			System.out.println("Assignment: = ");
 			}
@@ -522,7 +552,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(82);
+			setState(88);
 			match(BEGIN_BOARD);
 			System.out.println("Start Puzzle: {");
 			}
@@ -560,7 +590,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(85);
+			setState(91);
 			match(END_BOARD);
 			System.out.println("End Puzzle: }");
 			}
@@ -599,7 +629,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(88);
+			setState(94);
 			((TypeContext)_localctx).TYPE = match(TYPE);
 			System.out.println("Section: " + (((TypeContext)_localctx).TYPE!=null?((TypeContext)_localctx).TYPE.getText():null));
 			}
@@ -638,7 +668,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(91);
+			setState(97);
 			((MoveContext)_localctx).MOVE = match(MOVE);
 			System.out.println("Move: " + (((MoveContext)_localctx).MOVE!=null?((MoveContext)_localctx).MOVE.getText():null));
 			}
@@ -677,7 +707,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(94);
+			setState(100);
 			((NumContext)_localctx).NUM = match(NUM);
 			System.out.println("Tile: " + (((NumContext)_localctx).NUM!=null?((NumContext)_localctx).NUM.getText():null));
 			}
@@ -715,7 +745,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(97);
+			setState(103);
 			match(END_ROW);
 			System.out.println("End Row: $");
 			}
@@ -804,19 +834,19 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(102);
-			start();
-			setState(103);
-			type();
-			setState(104);
-			assignment();
-			setState(105);
-			match(BEGIN_LIST);
-			setState(106);
-			move_list();
-			setState(107);
-			match(END_LIST);
 			setState(108);
+			start();
+			setState(109);
+			type();
+			setState(110);
+			assignment();
+			setState(111);
+			match(BEGIN_LIST);
+			setState(112);
+			move_list();
+			setState(113);
+			match(END_LIST);
+			setState(114);
 			end();
 			}
 		}
@@ -873,19 +903,19 @@ public class csce322hmwrk01prt01Parser extends Parser {
 		try {
 			enterOuterAlt(_localctx, 1);
 			{
-			setState(110);
-			start();
-			setState(111);
-			type();
-			setState(112);
-			assignment();
-			setState(113);
-			begin_board();
-			setState(114);
-			row_list();
-			setState(115);
-			end_board();
 			setState(116);
+			start();
+			setState(117);
+			type();
+			setState(118);
+			assignment();
+			setState(119);
+			begin_board();
+			setState(120);
+			row_list();
+			setState(121);
+			end_board();
+			setState(122);
 			end();
 			}
 		}
@@ -901,33 +931,35 @@ public class csce322hmwrk01prt01Parser extends Parser {
 	}
 
 	public static final String _serializedATN =
-		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20y\4\2\t\2\4\3\t"+
-		"\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t\13\4"+
-		"\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\3\2\3\2\3\2\3\2"+
-		"\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\2\63\n\2\3\3\3\3\3"+
-		"\3\3\3\3\3\3\3\5\3;\n\3\3\4\3\4\3\4\3\4\3\4\5\4B\n\4\3\5\3\5\3\5\3\5\3"+
-		"\5\3\5\5\5J\n\5\3\6\3\6\3\6\3\7\3\7\3\7\3\b\3\b\3\b\3\t\3\t\3\t\3\n\3"+
-		"\n\3\n\3\13\3\13\3\13\3\f\3\f\3\f\3\r\3\r\3\r\3\16\3\16\3\16\3\17\3\17"+
-		"\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\21\3\21\3\21\3\21\3\21\3\21"+
-		"\3\21\3\21\3\21\2\2\22\2\4\6\b\n\f\16\20\22\24\26\30\32\34\36 \2\2\2p"+
-		"\2\62\3\2\2\2\4:\3\2\2\2\6A\3\2\2\2\bI\3\2\2\2\nK\3\2\2\2\fN\3\2\2\2\16"+
-		"Q\3\2\2\2\20T\3\2\2\2\22W\3\2\2\2\24Z\3\2\2\2\26]\3\2\2\2\30`\3\2\2\2"+
-		"\32c\3\2\2\2\34f\3\2\2\2\36h\3\2\2\2 p\3\2\2\2\"#\5\36\20\2#$\5 \21\2"+
-		"$%\5\34\17\2%&\7\2\2\3&\63\3\2\2\2\'(\5 \21\2()\5\34\17\2)*\7\2\2\3*\63"+
-		"\3\2\2\2+,\5 \21\2,-\5\36\20\2-.\5\34\17\2./\7\2\2\3/\63\3\2\2\2\60\61"+
-		"\7\20\2\2\61\63\b\2\1\2\62\"\3\2\2\2\62\'\3\2\2\2\62+\3\2\2\2\62\60\3"+
-		"\2\2\2\63\3\3\2\2\2\64;\3\2\2\2\65\66\5\26\f\2\66\67\7\3\2\2\678\5\4\3"+
-		"\28;\3\2\2\29;\5\26\f\2:\64\3\2\2\2:\65\3\2\2\2:9\3\2\2\2;\5\3\2\2\2<"+
-		"=\5\30\r\2=>\7\3\2\2>?\5\6\4\2?B\3\2\2\2@B\5\30\r\2A<\3\2\2\2A@\3\2\2"+
-		"\2B\7\3\2\2\2CJ\3\2\2\2DE\5\6\4\2EF\5\32\16\2FG\5\b\5\2GJ\3\2\2\2HJ\5"+
-		"\6\4\2IC\3\2\2\2ID\3\2\2\2IH\3\2\2\2J\t\3\2\2\2KL\7\4\2\2LM\b\6\1\2M\13"+
-		"\3\2\2\2NO\7\5\2\2OP\b\7\1\2P\r\3\2\2\2QR\7\7\2\2RS\b\b\1\2S\17\3\2\2"+
-		"\2TU\7\n\2\2UV\b\t\1\2V\21\3\2\2\2WX\7\13\2\2XY\b\n\1\2Y\23\3\2\2\2Z["+
-		"\7\6\2\2[\\\b\13\1\2\\\25\3\2\2\2]^\7\t\2\2^_\b\f\1\2_\27\3\2\2\2`a\7"+
-		"\b\2\2ab\b\r\1\2b\31\3\2\2\2cd\7\16\2\2de\b\16\1\2e\33\3\2\2\2fg\b\17"+
-		"\1\2g\35\3\2\2\2hi\5\n\6\2ij\5\24\13\2jk\5\16\b\2kl\7\f\2\2lm\5\4\3\2"+
-		"mn\7\r\2\2no\5\f\7\2o\37\3\2\2\2pq\5\n\6\2qr\5\24\13\2rs\5\16\b\2st\5"+
-		"\20\t\2tu\5\b\5\2uv\5\22\n\2vw\5\f\7\2w!\3\2\2\2\6\62:AI";
+		"\3\u608b\ua72a\u8133\ub9ed\u417c\u3be7\u7786\u5964\3\20\177\4\2\t\2\4"+
+		"\3\t\3\4\4\t\4\4\5\t\5\4\6\t\6\4\7\t\7\4\b\t\b\4\t\t\t\4\n\t\n\4\13\t"+
+		"\13\4\f\t\f\4\r\t\r\4\16\t\16\4\17\t\17\4\20\t\20\4\21\t\21\3\2\3\2\3"+
+		"\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\3\2\5\2\63\n\2\3\3"+
+		"\3\3\3\3\3\3\3\3\3\3\3\3\3\3\5\3=\n\3\3\4\3\4\3\4\3\4\3\4\3\4\3\4\5\4"+
+		"F\n\4\3\5\3\5\3\5\3\5\3\5\3\5\3\5\3\5\5\5P\n\5\3\6\3\6\3\6\3\7\3\7\3\7"+
+		"\3\b\3\b\3\b\3\t\3\t\3\t\3\n\3\n\3\n\3\13\3\13\3\13\3\f\3\f\3\f\3\r\3"+
+		"\r\3\r\3\16\3\16\3\16\3\17\3\17\3\20\3\20\3\20\3\20\3\20\3\20\3\20\3\20"+
+		"\3\21\3\21\3\21\3\21\3\21\3\21\3\21\3\21\3\21\2\2\22\2\4\6\b\n\f\16\20"+
+		"\22\24\26\30\32\34\36 \2\2\2y\2\62\3\2\2\2\4<\3\2\2\2\6E\3\2\2\2\bO\3"+
+		"\2\2\2\nQ\3\2\2\2\fT\3\2\2\2\16W\3\2\2\2\20Z\3\2\2\2\22]\3\2\2\2\24`\3"+
+		"\2\2\2\26c\3\2\2\2\30f\3\2\2\2\32i\3\2\2\2\34l\3\2\2\2\36n\3\2\2\2 v\3"+
+		"\2\2\2\"#\5\36\20\2#$\5 \21\2$%\5\34\17\2%&\7\2\2\3&\63\3\2\2\2\'(\5 "+
+		"\21\2()\5\34\17\2)*\7\2\2\3*\63\3\2\2\2+,\5 \21\2,-\5\36\20\2-.\5\34\17"+
+		"\2./\7\2\2\3/\63\3\2\2\2\60\61\7\20\2\2\61\63\b\2\1\2\62\"\3\2\2\2\62"+
+		"\'\3\2\2\2\62+\3\2\2\2\62\60\3\2\2\2\63\3\3\2\2\2\64=\3\2\2\2\65\66\5"+
+		"\26\f\2\66\67\7\3\2\2\678\5\4\3\28=\3\2\2\29=\5\26\f\2:;\7\20\2\2;=\b"+
+		"\3\1\2<\64\3\2\2\2<\65\3\2\2\2<9\3\2\2\2<:\3\2\2\2=\5\3\2\2\2>?\5\30\r"+
+		"\2?@\7\3\2\2@A\5\6\4\2AF\3\2\2\2BF\5\30\r\2CD\7\20\2\2DF\b\4\1\2E>\3\2"+
+		"\2\2EB\3\2\2\2EC\3\2\2\2F\7\3\2\2\2GP\3\2\2\2HI\5\6\4\2IJ\5\32\16\2JK"+
+		"\5\b\5\2KP\3\2\2\2LP\5\6\4\2MN\7\20\2\2NP\b\5\1\2OG\3\2\2\2OH\3\2\2\2"+
+		"OL\3\2\2\2OM\3\2\2\2P\t\3\2\2\2QR\7\4\2\2RS\b\6\1\2S\13\3\2\2\2TU\7\5"+
+		"\2\2UV\b\7\1\2V\r\3\2\2\2WX\7\7\2\2XY\b\b\1\2Y\17\3\2\2\2Z[\7\n\2\2[\\"+
+		"\b\t\1\2\\\21\3\2\2\2]^\7\13\2\2^_\b\n\1\2_\23\3\2\2\2`a\7\6\2\2ab\b\13"+
+		"\1\2b\25\3\2\2\2cd\7\t\2\2de\b\f\1\2e\27\3\2\2\2fg\7\b\2\2gh\b\r\1\2h"+
+		"\31\3\2\2\2ij\7\16\2\2jk\b\16\1\2k\33\3\2\2\2lm\b\17\1\2m\35\3\2\2\2n"+
+		"o\5\n\6\2op\5\24\13\2pq\5\16\b\2qr\7\f\2\2rs\5\4\3\2st\7\r\2\2tu\5\f\7"+
+		"\2u\37\3\2\2\2vw\5\n\6\2wx\5\24\13\2xy\5\16\b\2yz\5\20\t\2z{\5\b\5\2{"+
+		"|\5\22\n\2|}\5\f\7\2}!\3\2\2\2\6\62<EO";
 	public static final ATN _ATN =
 		new ATNDeserializer().deserialize(_serializedATN.toCharArray());
 	static {

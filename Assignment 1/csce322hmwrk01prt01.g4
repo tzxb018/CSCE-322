@@ -20,25 +20,25 @@ ANYTHING : (.);
 
 
 // rules
-boss : moves_sec puzzle_sec file_end EOF| puzzle_sec file_end EOF| puzzle_sec moves_sec file_end EOF| ANYTHING{System.out.println("Line " + $ANYTHING.line + " Contains Unrecognized Token " + $ANYTHING.text); System.exit(1);};
+boss : moves_sec puzzle_sec file_end EOF| puzzle_sec file_end EOF| puzzle_sec moves_sec file_end EOF| ANYTHING{System.out.println("Line " + $ANYTHING.line + " Contains Unrecognized Token " + $ANYTHING.text + "."); System.exit(1);};
 
 
 // recursive rule for calling the items in the move list 
 move_list: 
-    | (move '&' move_list) | move
-    ;
+    | (move '&' move_list) | move | ANYTHING{System.out.println("Line " + $ANYTHING.line + " Contains Unrecognized Token " + $ANYTHING.text + "."); System.exit(1);};
+    
 // recursive rule for calling the items of a row on the board
 row_items:
-    (num '&' row_items) | num
-    ;
+    (num '&' row_items) | num | ANYTHING{System.out.println("Line " + $ANYTHING.line + " Contains Unrecognized Token " + $ANYTHING.text + "."); System.exit(1);};
+    
 // recursive rule for calling the rows on the board
 row_list:
-    | (row_items end_row row_list) | row_items
-    ;
+    | (row_items end_row row_list) | row_items | ANYTHING{System.out.println("Line " + $ANYTHING.line + " Contains Unrecognized Token " + $ANYTHING.text + "."); System.exit(1);};
+    
 
 start: START{System.out.println("Start Section: " + $START.text);};
 end: END{System.out.println("End Section: " + $END.text);};
-assignment: VALUE{System.out.println("Assignment: = ");};
+assignment: VALUE{System.out.println("Assignment: =");};
 begin_board: BEGIN_BOARD{System.out.println("Start Puzzle: {");};
 end_board: END_BOARD{System.out.println("End Puzzle: }");};
 type: TYPE{System.out.println("Section: " + $TYPE.text);};
