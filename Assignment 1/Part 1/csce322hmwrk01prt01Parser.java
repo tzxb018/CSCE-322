@@ -516,7 +516,7 @@ public class csce322hmwrk01prt01Parser extends Parser {
 			{
 			setState(85);
 			match(VALUE);
-			System.out.println("Assignment: = ");
+			System.out.println("Assignment: =");
 			}
 		}
 		catch (RecognitionException re) {
