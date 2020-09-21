@@ -1,0 +1,6 @@
+<<alpha Moves = [ r & u & d & u & D & l & d & d & r & u &
+R & l & u & d & d & u ] omega>>
+<<alpha Puzzle = {
+2 & 8 & 5 & 1 & 0 & 7 & 6 & 3 & 4
+}
+omega>>

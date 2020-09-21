@@ -1,0 +1,20 @@
+Start Section: <<alpha
+Section: Moves
+Assignment: =
+End Section: omega>>
+Start Section: <<alpha
+Section: Puzzle
+Assignment: =
+Start Puzzle: {
+Tile: 6
+Tile: 4
+Tile: 5
+Tile: 1
+End Row: $
+Tile: 0
+Tile: 2
+Tile: 3
+Tile: 7
+End Puzzle: }
+End Section: omega>>
+End of File
