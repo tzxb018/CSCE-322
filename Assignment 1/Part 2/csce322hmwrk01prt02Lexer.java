@@ -1,4 +1,9 @@
 // Generated from csce322hmwrk01prt02.g4 by ANTLR 4.8
+
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;
+
 import org.antlr.v4.runtime.Lexer;
 import org.antlr.v4.runtime.CharStream;
 import org.antlr.v4.runtime.Token;
@@ -90,6 +95,9 @@ public class csce322hmwrk01prt02Lexer extends Lexer {
 	    int num_counter = 0;
 	    int max_num = -1; 
 	    boolean valid = true;
+	    boolean neg_num = false;
+	    ArrayList<Integer> list_of_nums = new ArrayList<Integer>();
+	    ArrayList<ArrayList<Integer>> num_matrix = new ArrayList<ArrayList<Integer>>(); 
 
 
 	public csce322hmwrk01prt02Lexer(CharStream input) {

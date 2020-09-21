@@ -1,4 +1,9 @@
 // Generated from csce322hmwrk01prt02.g4 by ANTLR 4.8
+
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;
+
 import org.antlr.v4.runtime.tree.ParseTreeListener;
 
 /**
@@ -97,6 +102,26 @@ public interface csce322hmwrk01prt02Listener extends ParseTreeListener {
 	 */
 	void exitBegin_board(csce322hmwrk01prt02Parser.Begin_boardContext ctx);
 	/**
+	 * Enter a parse tree produced by {@link csce322hmwrk01prt02Parser#begin_row}.
+	 * @param ctx the parse tree
+	 */
+	void enterBegin_row(csce322hmwrk01prt02Parser.Begin_rowContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link csce322hmwrk01prt02Parser#begin_row}.
+	 * @param ctx the parse tree
+	 */
+	void exitBegin_row(csce322hmwrk01prt02Parser.Begin_rowContext ctx);
+	/**
+	 * Enter a parse tree produced by {@link csce322hmwrk01prt02Parser#first_row}.
+	 * @param ctx the parse tree
+	 */
+	void enterFirst_row(csce322hmwrk01prt02Parser.First_rowContext ctx);
+	/**
+	 * Exit a parse tree produced by {@link csce322hmwrk01prt02Parser#first_row}.
+	 * @param ctx the parse tree
+	 */
+	void exitFirst_row(csce322hmwrk01prt02Parser.First_rowContext ctx);
+	/**
 	 * Enter a parse tree produced by {@link csce322hmwrk01prt02Parser#end_board}.
 	 * @param ctx the parse tree
 	 */
@@ -126,26 +151,6 @@ public interface csce322hmwrk01prt02Listener extends ParseTreeListener {
 	 * @param ctx the parse tree
 	 */
 	void exitMove(csce322hmwrk01prt02Parser.MoveContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link csce322hmwrk01prt02Parser#row_start}.
-	 * @param ctx the parse tree
-	 */
-	void enterRow_start(csce322hmwrk01prt02Parser.Row_startContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link csce322hmwrk01prt02Parser#row_start}.
-	 * @param ctx the parse tree
-	 */
-	void exitRow_start(csce322hmwrk01prt02Parser.Row_startContext ctx);
-	/**
-	 * Enter a parse tree produced by {@link csce322hmwrk01prt02Parser#first_row}.
-	 * @param ctx the parse tree
-	 */
-	void enterFirst_row(csce322hmwrk01prt02Parser.First_rowContext ctx);
-	/**
-	 * Exit a parse tree produced by {@link csce322hmwrk01prt02Parser#first_row}.
-	 * @param ctx the parse tree
-	 */
-	void exitFirst_row(csce322hmwrk01prt02Parser.First_rowContext ctx);
 	/**
 	 * Enter a parse tree produced by {@link csce322hmwrk01prt02Parser#num}.
 	 * @param ctx the parse tree

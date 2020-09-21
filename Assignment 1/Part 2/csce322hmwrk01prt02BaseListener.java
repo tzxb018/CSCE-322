@@ -1,5 +1,10 @@
 // Generated from csce322hmwrk01prt02.g4 by ANTLR 4.8
 
+    import java.util.ArrayList;
+    import java.util.Arrays;
+    import java.util.List;
+
+
 import org.antlr.v4.runtime.ParserRuleContext;
 import org.antlr.v4.runtime.tree.ErrorNode;
 import org.antlr.v4.runtime.tree.TerminalNode;
@@ -123,6 +128,30 @@ public class csce322hmwrk01prt02BaseListener implements csce322hmwrk01prt02Liste
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	@Override public void enterBegin_row(csce322hmwrk01prt02Parser.Begin_rowContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitBegin_row(csce322hmwrk01prt02Parser.Begin_rowContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void enterFirst_row(csce322hmwrk01prt02Parser.First_rowContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	@Override public void exitFirst_row(csce322hmwrk01prt02Parser.First_rowContext ctx) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	@Override public void enterEnd_board(csce322hmwrk01prt02Parser.End_boardContext ctx) { }
 	/**
 	 * {@inheritDoc}
@@ -154,30 +183,6 @@ public class csce322hmwrk01prt02BaseListener implements csce322hmwrk01prt02Liste
 	 * <p>The default implementation does nothing.</p>
 	 */
 	@Override public void exitMove(csce322hmwrk01prt02Parser.MoveContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterRow_start(csce322hmwrk01prt02Parser.Row_startContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitRow_start(csce322hmwrk01prt02Parser.Row_startContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void enterFirst_row(csce322hmwrk01prt02Parser.First_rowContext ctx) { }
-	/**
-	 * {@inheritDoc}
-	 *
-	 * <p>The default implementation does nothing.</p>
-	 */
-	@Override public void exitFirst_row(csce322hmwrk01prt02Parser.First_rowContext ctx) { }
 	/**
 	 * {@inheritDoc}
 	 *
