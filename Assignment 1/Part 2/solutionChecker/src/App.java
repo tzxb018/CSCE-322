@@ -5,11 +5,9 @@ import java.util.List;
 public class App {
     public static void main(String[] args) throws Exception {
 
-        int column_counter = 8;
-        Integer[][] starter = { { 34, 41, 46, 21, 35, 62, 26, 40 }, { 2, 32, 48, 31, 61, 10, 4, 20 },
-                { 42, 25, 6, 44, 27, 52, 45, 15 }, { 13, 55, 33, 23, 57, 59, 56, 37 },
-                { 38, 16, 39, 9, 43, 19, 51, 18 }, { 50, 3, 47, 12, 14, 1, 7, 22 }, { 36, 0, 11, 49, 24, 30, 53, 28 },
-                { 29, 17, 8, 63, 54, 58, 5, 60 } };
+        int column_counter = 4;
+        Integer[][] starter = { { 0, 5, 4, 2 }, { 14, 28, 22, 30 }, { 17, 32, 15, 1 }, { 20, 35, 11, 25 },
+                { 27, 19, 24, 9 }, { 21, 8, 33, 7 }, { 3, 31, 6, 12 }, { 34, 10, 23, 18 }, { 13, 26, 16, 29 } };
 
         List<Integer> list_of_nums = new ArrayList<Integer>();
         for (Integer[] a : starter) {
