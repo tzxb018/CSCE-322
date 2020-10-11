@@ -1184,9 +1184,9 @@ public class csce322hmwrk01prt02Parser extends Parser {
 			    if (inversions % 2 == 1) {
 			        inversion_odd = true;
 			    }
-			    // System.out.println("Inversion: " + inversions);
-			    // System.out.println("Zero Row: " + row_zero);
-			    // System.out.println("Grid odd: " + grid_odd + ", inversion odd: " + inversion_odd + ", zero odd: " + zero_odd);
+			    System.out.println("Inversion: " + inversions);
+			    System.out.println("Zero Row: " + row_zero);
+			    System.out.println("Grid odd: " + grid_odd + ", inversion odd: " + inversion_odd + ", zero odd: " + zero_odd);
 			    if ((grid_odd == true && inversion_odd == false) || (grid_odd == false && (zero_odd == !inversion_odd))) {
 			        if (valid)
 			            System.out.println("The puzzle has " + num_counter + " tiles");
