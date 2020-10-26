@@ -71,7 +71,7 @@ updateMove move (y, x)
 validateMove :: Char -> [[Int]] -> (Int, Int) -> Bool
 validateMove move puzzle (y, x)
   | move == 'd' && y > 0 = True
-  | move == 'u' && y < (puzzleRows puzzle - 1) = True
+  | move == 'u' && y < (puzzleRows puzzle - 1 ) = True
   | move == 'r' && x > 0 = True
   | move == 'l' && x < (puzzleColumns puzzle - 1) = True
   | otherwise = False
