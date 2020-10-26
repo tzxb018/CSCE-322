@@ -1,4 +1,4 @@
-# CSCE-322
+# Programming Languages and Concepts (CSCE 322 Fall 2020)
 ## Overview
 This is a repo holding all of my code for CSCE 322, Programming Languages and Concepts. For the class, we were required to do 4 different coding projects, all of which were related to solving the [boss puzzle](https://en.wikipedia.org/wiki/15_puzzle). The 4 different languages I used for this class were ANTLR, JavaScript, Haskell, and Prolog. Each of these languages have their own advantages, disadvantages, logic, and syntax that I had to learn to correctly implement. The general functions I had to implement in each assignment was making a single move in the puzzle given a direction, making several moves given a list of directions to move in, and determining if the puzzle was [solvable](https://www.cs.bham.ac.uk/~mdr/teaching/modules04/java2/TilesSolvability.html).  
 
