@@ -1,0 +1,6 @@
+[0,1,3]
+[2,5,4]
+paths
+[l,u,r,d,l,u,l,d,r,r,u,l,d,l,u]
+[u,l,d,r,u,l,l,d,r,r,u,l,d,l,u]
+true
