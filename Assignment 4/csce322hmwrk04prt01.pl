@@ -14,10 +14,6 @@ flattenMatrix([H|T], FlatPuzzle):-
     flattenMatrix(T, UpdatedFlatPuzzle),
     append(H, UpdatedFlatPuzzle, FlatPuzzle).
 
-reverse([],Z,Z).
-
-reverse([H|T],Z,Acc) :- reverse(T,Z,[H|Acc]).
-
 iterateList([],0, 0).
 
 iterateList([H|T], Inversions2, Sum2):-
